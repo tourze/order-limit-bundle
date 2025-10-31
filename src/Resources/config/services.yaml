@@ -1,0 +1,18 @@
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+    OrderLimitBundle\Exception\:
+        resource: '../../Exception/'
+    
+    OrderLimitBundle\Limit\:
+        resource: '../../Limit/'
+    
+    OrderLimitBundle\Service\:
+        resource: '../../Service/'
+
+    # 确保LimitService可以被其他bundle使用
+    OrderLimitBundle\Service\LimitService:
+        public: true
