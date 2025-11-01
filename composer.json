@@ -28,7 +28,7 @@
     "tourze/order-core-bundle": "0.0.*",
     "tourze/product-core-bundle": "0.0.*",
     "tourze/product-limit-rule-bundle": "0.0.*",
-    "tourze/symfony-dependency-service-loader": "1.*"
+    "tourze/symfony-dependency-service-loader": "1.0.*"
   },
   "require-dev": {
     "phpstan/phpstan": "^2.1",
