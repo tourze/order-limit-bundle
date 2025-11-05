@@ -5,12 +5,12 @@ namespace OrderLimitBundle\Limit;
 use Monolog\Attribute\WithMonologChannel;
 use OrderCoreBundle\Entity\Contract;
 use OrderCoreBundle\Entity\OrderProduct;
+use OrderLimitBundle\Exception\LimitRuleTriggerException;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\DependencyInjection\Attribute\Autoconfigure;
 use Tourze\ProductLimitRuleBundle\Entity\CategoryLimitRule;
 use Tourze\ProductLimitRuleBundle\Entity\SkuLimitRule;
 use Tourze\ProductLimitRuleBundle\Entity\SpuLimitRule;
-use Tourze\ProductLimitRuleBundle\Exception\LimitRuleTriggerException;
 
 #[WithMonologChannel(channel: 'order_limit')]
 #[Autoconfigure(public: true)]

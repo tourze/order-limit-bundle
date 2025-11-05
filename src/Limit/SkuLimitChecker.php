@@ -6,13 +6,13 @@ use Carbon\CarbonInterface;
 use Monolog\Attribute\WithMonologChannel;
 use OrderCoreBundle\Entity\Contract;
 use OrderCoreBundle\Entity\OrderProduct;
+use OrderLimitBundle\Exception\LimitRuleTriggerException;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\DependencyInjection\Attribute\Autoconfigure;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Tourze\ProductCoreBundle\Entity\Sku;
 use Tourze\ProductLimitRuleBundle\Entity\SkuLimitRule;
 use Tourze\ProductLimitRuleBundle\Enum\SkuLimitType;
-use Tourze\ProductLimitRuleBundle\Exception\LimitRuleTriggerException;
 
 /**
  * SKU限制检查器 - 专门处理SKU级别的购买限制

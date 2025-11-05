@@ -11,13 +11,13 @@ use OrderCoreBundle\Enum\OrderState;
 use OrderCoreBundle\Repository\ContractRepository;
 use OrderCoreBundle\Repository\OrderProductRepository;
 use OrderLimitBundle\Exception\ContractNotFoundException;
+use OrderLimitBundle\Exception\LimitRuleTriggerException;
 use OrderLimitBundle\Exception\SkuNotFoundException;
 use OrderLimitBundle\Exception\UserNotFoundException;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\DependencyInjection\Attribute\Autoconfigure;
 use Tourze\ProductLimitRuleBundle\Entity\CategoryLimitRule;
 use Tourze\ProductLimitRuleBundle\Enum\CategoryLimitType;
-use Tourze\ProductLimitRuleBundle\Exception\LimitRuleTriggerException;
 
 /**
  * 分类限制检查器 - 专门处理分类级别的购买限制

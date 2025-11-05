@@ -10,6 +10,7 @@ use OrderCoreBundle\Entity\OrderProduct;
 use OrderCoreBundle\Enum\OrderState;
 use OrderCoreBundle\Repository\ContractRepository;
 use OrderCoreBundle\Repository\OrderProductRepository;
+use OrderLimitBundle\Exception\LimitRuleTriggerException;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\DependencyInjection\Attribute\Autoconfigure;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -17,7 +18,6 @@ use Tourze\ProductCoreBundle\Entity\Spu;
 use Tourze\ProductCoreBundle\Service\SpuService;
 use Tourze\ProductLimitRuleBundle\Entity\SpuLimitRule;
 use Tourze\ProductLimitRuleBundle\Enum\SpuLimitType;
-use Tourze\ProductLimitRuleBundle\Exception\LimitRuleTriggerException;
 
 /**
  * SPU限制检查器 - 专门处理SPU级别的购买限制

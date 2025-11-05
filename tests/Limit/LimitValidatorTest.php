@@ -4,12 +4,12 @@ namespace OrderLimitBundle\Tests\Limit;
 
 use OrderCoreBundle\Entity\Contract;
 use OrderCoreBundle\Entity\OrderProduct;
+use OrderLimitBundle\Exception\LimitRuleTriggerException;
 use OrderLimitBundle\Limit\LimitValidator;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses;
 use Tourze\PHPUnitSymfonyKernelTest\AbstractIntegrationTestCase;
 use Tourze\ProductLimitRuleBundle\Entity\SkuLimitRule;
-use Tourze\ProductLimitRuleBundle\Exception\LimitRuleTriggerException;
 
 /**
  * @internal
