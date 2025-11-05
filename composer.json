@@ -25,7 +25,7 @@
     "symfony/service-contracts": "^3.6",
     "symfony/yaml": "^7.3",
     "tourze/bundle-dependency": "1.*",
-    "tourze/order-core-bundle": "0.0.*",
+    "tourze/order-core-bundle": "1.0.*",
     "tourze/product-core-bundle": "1.0.*",
     "tourze/product-limit-rule-bundle": "0.0.*",
     "tourze/symfony-dependency-service-loader": "1.0.*"
