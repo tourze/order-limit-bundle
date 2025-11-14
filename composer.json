@@ -27,7 +27,7 @@
     "tourze/bundle-dependency": "1.*",
     "tourze/order-core-bundle": "1.0.*",
     "tourze/product-core-bundle": "1.0.*",
-    "tourze/product-limit-rule-bundle": "1.0.*",
+    "tourze/product-limit-rule-bundle": "0.0.*",
     "tourze/symfony-dependency-service-loader": "1.0.*"
   },
   "require-dev": {
